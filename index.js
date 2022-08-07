@@ -6,7 +6,7 @@ let displays;
 //display represents the number that is being displayed
 let display,display1,display2,answer;
 
-function displaynumbers(number) {
+function displayNumbers(number) {
     document.getElementById('mainDisplay').innerHTML+=number;
     display=Number(document.getElementById('mainDisplay').innerHTML);
     if (sign) {
@@ -61,7 +61,7 @@ function calculateResults(calculate) {
 }
 
 //the C button
-function clearall() {
+function clearAll() {
     val1=''
     val2=''
     answer=''
@@ -73,12 +73,12 @@ function clearall() {
 }
 
 // the CE button
-function cleardisplay() {
+function clearDisplay() {
    document.getElementById('mainDispaly').innerHTML='';
 }
 
 //fa fa-delete button
-function deletebutton() {
+function deleteButton() {
     displays=document.getElementById('mainDisplay').innerHTML;
     edit=displays.slice(0,-1)
     document.getElementById('mainDisplay').innerHTML=edit;
