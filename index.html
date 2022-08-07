@@ -50,9 +50,9 @@
         </div>
         <div class="d-flex">
             <button class="boxes2"><b>%</b></button>
-            <button class="boxes2"  onclick="remove2()"><b>CE</b></button>
-            <button class="boxes2" onclick="remove()"><b>C</b></button>
-            <button class="boxes2" onclick="del()"><i class="fa fa-delete-left" ></i></button>
+            <button class="boxes2"  onclick="cleardisplay()"><b>CE</b></button>
+            <button class="boxes2" onclick="clearall()"><b>C</b></button>
+            <button class="boxes2" onclick="deletebutton()"><i class="fa fa-delete-left" ></i></button>
         </div>
         <div class="d-flex">
             <button class="boxes2"><b>1/X</b></button>
@@ -61,27 +61,27 @@
             <button class="boxes2" onclick="operator('/')"><b>÷</b></button>
         </div>
         <div class="d-flex">
-            <button class="boxes2 bg-white" onclick="vallue(7)"><b>7</b></button>
-            <button class="boxes2 bg-white" onclick="vallue(8)"><b>8</b></button>
-            <button class="boxes2 bg-white" onclick="vallue(9)"><b>9</b></button>
+            <button class="boxes2 bg-white" onclick="value(7)"><b>7</b></button>
+            <button class="boxes2 bg-white" onclick="value(8)"><b>8</b></button>
+            <button class="boxes2 bg-white" onclick="value(9)"><b>9</b></button>
             <button class="boxes2" onclick="operator('*')" id="option"><b>X</b></button>
         </div>
         <div class="d-flex">
-            <button class="boxes2 bg-white" onclick="vallue(4)"><b>4</b></button>
-            <button class="boxes2 bg-white" onclick="vallue(5)"><b>5</b></button>
-            <button class="boxes2 bg-white" onclick="vallue(6)"><b>6</b></button>
+            <button class="boxes2 bg-white" onclick="value(4)"><b>4</b></button>
+            <button class="boxes2 bg-white" onclick="value(5)"><b>5</b></button>
+            <button class="boxes2 bg-white" onclick="value(6)"><b>6</b></button>
             <button class="boxes2" onclick="operator('-')" id="option"><b>-</b></button>
         </div>
         <div class="d-flex">
-            <button class="boxes2 bg-white" onclick="vallue(1)" id="one"><b>1</b></button>
-            <button class="boxes2 bg-white" onclick="vallue(2)" id="two"><b>2</b></button>
-            <button class="boxes2 bg-white" onclick="vallue(3)"><b>3</b></button>
+            <button class="boxes2 bg-white" onclick="value(1)" id="one"><b>1</b></button>
+            <button class="boxes2 bg-white" onclick="value(2)" id="two"><b>2</b></button>
+            <button class="boxes2 bg-white" onclick="value(3)"><b>3</b></button>
             <button class="boxes2" onclick="operator('+')" id="option"><b>+</b></button>
         </div>
         <div class="d-flex">
-            <button class="boxes2 bg-white" onclick="vallue('+/-')"><b>+/-</b></button>
-            <button class="boxes2 bg-white" onclick="vallue(0)"><b>0</b></button>
-            <button class="boxes2 bg-white" onclick="vallue('.')"><b>.</b></button>
+            <button class="boxes2 bg-white" onclick="value('+/-')"><b>+/-</b></button>
+            <button class="boxes2 bg-white" onclick="value(0)"><b>0</b></button>
+            <button class="boxes2 bg-white" onclick="value('.')"><b>.</b></button>
             <button class="boxes2 bg-primary" onclick="equal('=')" id="option"><b>=</b></button>
         </div>
     </div>

@@ -2,7 +2,7 @@ let val;
 let sign;
 let val3;
 let val1,val2,answer;
-function vallue(number) {
+function value(number) {
     document.getElementById('show').innerHTML+=number
     let val3=Number(document.getElementById('show').innerHTML)
     if (sign) {
@@ -67,8 +67,8 @@ function equal(calculate) {
 
 }
 
-
-function remove() {
+//the C button
+function clearall() {
     val1=''
     val2=''
     answer=''
@@ -78,13 +78,16 @@ function remove() {
    
 
 }
-function remove2() {
+
+// the CE button
+function cleardisplay() {
    document.getElementById('show').innerHTML=''
 }
 
-function del() {
+//fa fa-delete button
+function deletebutton() {
     display=document.getElementById('show').innerHTML
-   let delet=display.slice(0,-1)
-    document.getElementById('show').innerHTML=delet
+   let edit=display.slice(0,-1)
+    document.getElementById('show').innerHTML=edit
     // console.log(stri);
 }
