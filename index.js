@@ -1,60 +1,61 @@
-let val;
 let sign;
-let val3;
+let input;
 let input1;
 let input2;
-let val1,val2,answer;
+let displays;
+//display represents the number that is being displayed
+let display,display1,display2,answer;
 
 function displaynumbers(number) {
-    document.getElementById('UI2').innerHTML+=number;
-    let val3=Number(document.getElementById('UI2').innerHTML);
+    document.getElementById('mainDisplay').innerHTML+=number;
+    display=Number(document.getElementById('mainDisplay').innerHTML);
     if (sign) {
-        val2=val3;
+        display2=display;
     }
     else{
-        val1=val3;
+        display1=display;
     }
     
 }
 function operator(operatorr) {
-if (val1 && sign ) {
+if (display1 && sign ) {
     equal()
-    document.getElementById('UI1').innerHTML='';
-    document.getElementById('UI2').innerHTML=(answer);
+    document.getElementById('secondaryDisplay').innerHTML='';
+    document.getElementById('mainDisplay').innerHTML=(answer);
     console.log(answer);
 }
     sign=operatorr
-    input1=Number(document.getElementById('UI2').innerHTML);
-    document.getElementById('UI1').innerHTML+=(input1+sign);
+    input1=Number(document.getElementById('mainDisplay').innerHTML);
+    document.getElementById('secondaryDisplay').innerHTML+=(input1+sign);
 
-    input2=Number(document.getElementById('UI1').innerHTML);
+    input2=Number(document.getElementById('secondaryDisplay').innerHTML);
     if (operatorr){
-        document.getElementById('UI2').innerHTML='';
+        document.getElementById('mainDisplay').innerHTML='';
     }
 }
 
 
 
 function calculateResults(calculate) {
-    let input=Number(document.getElementById('UI2').innerHTML);
+    input=Number(document.getElementById('mainDisplay').innerHTML);
     document.getElementById('UI1').innerHTML+=(input+calculate);
 
     if (sign=='+'){
-        answer=val1+val2
-       Number( document.getElementById('UI2').innerHTML=answer);
+        answer=display1+display2
+       Number( document.getElementById('mainDisplay').innerHTML=answer);
   
     }
     else if (sign=='-'){
-        answer=val1-val2
-        document.getElementById('UI2').innerHTML=(answer);
+        answer=display1-display2
+        document.getElementById('mainDisplay').innerHTML=(answer);
     }
    else if (sign=='*'){
-        answer=val1*val2
-        document.getElementById('UI2').innerHTML=(answer);
+        answer=display1*display2
+        document.getElementById('mainDisplay').innerHTML=(answer);
     }
     else if (sign=='/'){
-        answer=val1/val2
-        document.getElementById('UI2').innerHTML=(answer);
+        answer=display1/display2
+        document.getElementById('mainDisplay').innerHTML=(answer);
     }
 
 }
@@ -65,20 +66,20 @@ function clearall() {
     val2=''
     answer=''
     sign=''
-   document.getElementById('UI2').innerHTML='';
-   document.getElementById('UI1').innerHTML='';
+   document.getElementById('mainDisplay').innerHTML='';
+   document.getElementById('secondaryDisplay').innerHTML='';
    
 
 }
 
 // the CE button
 function cleardisplay() {
-   document.getElementById('UI2').innerHTML='';
+   document.getElementById('mainDispaly').innerHTML='';
 }
 
 //fa fa-delete button
 function deletebutton() {
-    display=document.getElementById('UI2').innerHTML;
-   let edit=display.slice(0,-1)
-    document.getElementById('UI2').innerHTML=edit;
+    displays=document.getElementById('mainDisplay').innerHTML;
+    edit=displays.slice(0,-1)
+    document.getElementById('mainDisplay').innerHTML=edit;
 }

@@ -46,7 +46,7 @@ button:hover{
 .bg-primary{
   background-color: rgb(93, 93, 248) !important;
 }
-#UI1{
+#secondaryDisplay{
   height: 52px;
   width: 100%;
   overflow:hidden;
@@ -57,7 +57,7 @@ button:hover{
 }
 
 
-#UI2{
+#mainDisplay{
   height: 30px;
   width: 100%;
   overflow:hidden;
