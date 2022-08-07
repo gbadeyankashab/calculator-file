@@ -38,7 +38,7 @@ if (display1 && sign ) {
 
 function calculateResults(calculate) {
     input=Number(document.getElementById('mainDisplay').innerHTML);
-    document.getElementById('UI1').innerHTML+=(input+calculate);
+    document.getElementById('secondaryDisplay').innerHTML+=(input+calculate);
 
     if (sign=='+'){
         answer=display1+display2
