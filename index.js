@@ -5,7 +5,6 @@ let input2;
 let displays;
 //display represents the number that is being displayed
 let display,display1,display2,answer;
-
 function displayNumbers(number) {
     document.getElementById("mainDisplay").innerHTML+=number;
     display=Number(document.getElementById("mainDisplay").innerHTML);
